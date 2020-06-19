@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_grishma"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvAnsSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/here_are_the_answers_selected"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvQues1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ques_one"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvAns1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ans"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
+            android:textStyle="italic"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvQues2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ques_two"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvAns2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ans"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
+            android:textStyle="italic"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_finish" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_history" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

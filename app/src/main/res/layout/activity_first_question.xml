@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".view.FirstQuestionActivity">
+
+        <TextView
+            android:id="@+id/tvQuesOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/radioGroup"
+            android:text="@string/ques_one"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/sachin_tendulkar" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/virat_kohli" />
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adam_gilchirst" />
+
+            <RadioButton
+                android:id="@+id/radioBtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jacques_kallis" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_next" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
